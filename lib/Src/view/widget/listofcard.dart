@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:stageorange/Core/app_data.dart';
+import 'package:stageorange/Src/view/Screen/Hosting.dart';
+import 'package:stageorange/Src/view/Screen/HostingWhereWhen.dart';
 import 'package:stageorange/Src/view/Screen/adddestination.dart';
 import 'package:stageorange/Src/view/Screen/addpassport_screen.dart';
 
 class ListOfCard extends StatelessWidget {
   ListOfCard() : super();
 
-  final List<Widget> screens = [
+  final List<Widget> _screens = [
     addpassport(),
     adddestination(),
+    HostingWhereWhen(),
   ];
 
   @override
@@ -26,14 +29,14 @@ class ListOfCard extends StatelessWidget {
           child: GestureDetector(
             onTap: () => {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => screens[index]))
+                  MaterialPageRoute(builder: (context) => _screens[index]))
             },
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(35.0),
                 color: Colors.white54,
                 border: Border.all(
-                  color: Colors.black,
+                  color: Colors.green,
                 ),
               ),
               child: Padding(

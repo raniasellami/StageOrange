@@ -27,8 +27,6 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  bloc: ^8.1.0
-  flutter_bloc: ^8.1.1
 
   location: ^4.4.0
   flutter:
@@ -40,6 +38,14 @@ dependencies:
   cupertino_icons: ^1.0.5
   get: ^4.6.5
   google_maps_flutter: ^2.2.0
+  syncfusion_flutter_maps: ^20.2.48
+  modal_bottom_sheet: ^2.1.2
+  flutter_gradient_colors: ^2.1.1
+  geocoding: ^2.0.5
+  dio: ^4.0.6
+  settings_ui: ^2.0.2
+  syncfusion_flutter_calendar: ^20.2.50
+
 
 
 dev_dependencies:
@@ -62,6 +68,7 @@ flutter:
     - assets/
     - assets/images/
     - assets/fonts/
+    - assets/map_style.json
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

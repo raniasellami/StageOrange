@@ -6,17 +6,16 @@ import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:stageorange/Core/app_color.dart';
 import 'package:stageorange/Core/app_data.dart';
 import 'package:stageorange/Src/controller/HomeController.dart';
-
-import 'AddTripScreen.dart';
-import 'SeeAllTrips.dart';
-import 'listofcard_screen.dart';
+import 'package:stageorange/Src/view/Screen/AllTripScreen.dart';
 
 final TripController controller = Get.put(TripController());
 
 class home extends StatelessWidget {
   home({Key? key}) : super(key: key);
 
-  final List<Widget> screens = [ListOfCardScreen(), AddTrip(), SeeAllTrips()];
+  final List<Widget> screens = [
+    LastTrip(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

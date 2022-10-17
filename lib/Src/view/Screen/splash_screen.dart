@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stageorange/Core/app_style.dart';
-import 'home_screen.dart';
+import 'package:stageorange/Src/view/Screen/AllTripScreen.dart';
 
 class splash_screen extends StatelessWidget {
   const splash_screen({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class splash_screen extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => home()),
+                MaterialPageRoute(builder: (_) => LastTrip()),
               );
             },
             style: ButtonStyle(

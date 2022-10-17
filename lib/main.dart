@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'Src/view/Screen/listofcard_screen.dart';
 import 'Src/view/Screen/splash_screen.dart';
+import 'Src/view/Screen/AllTripScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,8 +22,8 @@ class MyApp extends StatelessWidget {
         "/splash_screen": (BuildContext context) {
           return splash_screen();
         },
-        "/listofcard": (BuildContext context) {
-          return ListOfCardScreen();
+        "/LastTrip": (BuildContext context) {
+          return LastTrip();
         }
       },
     );

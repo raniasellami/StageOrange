@@ -18,12 +18,17 @@ class _CardAddTripeState extends State<CardAddTripe> {
       height: 50,
       child: Card(
         shape: RoundedRectangleBorder(
-          side: BorderSide(color: Colors.white70, width: 1),
+          side: BorderSide(
+            width: 1,
+          ),
           borderRadius: BorderRadius.circular(2),
         ),
-        color: Colors.red,
+        //color: Colors.lightGreen,une application qui permet au utilisateur de scanne un panneau  de direction pour savoir sa utilité  vibreur
+        //  shadowColor: Colors.lightGreen,
+        elevation: 8,
         child: Center(
           child: AppData.CardAddTrips[widget.index].icon,
+          heightFactor: double.maxFinite,
         ),
       ),
     );
